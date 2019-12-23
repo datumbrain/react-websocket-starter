@@ -1,24 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import A from "./components/A";
+import B from "./components/B";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display: "flex", flexDirection: "row"}}>
+
+      <div style={{flex: "0 0 50%", marginLeft: "15%"}}>
+        <A />
+
+      </div>
+
+      <div style={{flex: "1"}}>
+        <B />
+      </div>
     </div>
   );
 }
